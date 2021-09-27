@@ -1,0 +1,24 @@
+.container{
+    margin: 5px;
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.gallery {
+    margin: 5px;
+    width: 180px;
+    
+    flex: 1;
+    
+  }
+  
+.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }

@@ -1,0 +1,220 @@
+$SecondaryColor: #321cc4; //Creates a variable to the secondary color of the wesbite in hexadecimal
+
+.headerParent{
+
+    width: 100%; //width files the entire screen
+    height: 110px;  //height is 110 pixels
+    position:  relative; //div is positions relative to other divs, allows for placement to the left right center or etc.
+    display: block; // div has its own block, if placed together they have no line break.
+    background-color:white; //sets background collor 
+    box-shadow: 5px 5px 5px $SecondaryColor; //sets a shadow on the box in the secondary color
+    z-index: 10000; //sends element to the front of the screen
+    left: 0;
+    right: 0;
+    
+    @media screen and (min-width: 1000px){ //larger screen, if the screen is over this size do these
+        display: flex; // puts element inside this div in a certain order, flex boxes can be editted to do awesome things
+    }
+    @media screen and (max-width: 1000px){ //smaller screen, if the screen is under these do this.
+        display: flex;  //
+    }
+}
+.FlexBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    
+    
+}
+.boxCol{
+    flex:1; //gives a flex number in order to put multiple divs in a container, makes them responsive to the container
+    position: relative; 
+}
+.boxCol :nth-child(2){ //allows for multiple seperate creations of the same element and the are ordered in the time created
+    flex:1;
+    position: relative;
+    margin-left: auto; //puts a margin relative to the left of the element from the previous element in a way that fits the parent div
+}
+.boxCol :nth-child(3){
+    flex:1;
+    position: relative;
+    margin-left: auto;
+}
+.boxCol :nth-child(1){
+    flex:1;
+    position: relative;
+    margin-left: auto;
+}
+.HeaderLogo{
+   
+    @media (min-width: 770px){ 
+        height: 100%;
+        position: relative;
+        flex: 1;
+    }
+    @media (max-width: 770px){
+        min-width: 65%; //sets a minimum width of the element based on its orignal size
+        height: 100%;
+        position: relative;
+        flex: 1;
+    }
+}
+    .HeaderLogo img{ //gives images in header logo these properties
+        height: 110px;
+        width: auto;
+        position: relative;
+        flex:1;
+        @media (max-width: 425px){
+            width:auto;
+            height: 110px;
+            position: relative;
+            flex: 1;
+        }
+        @media (max-width: 425px){
+            max-width:150%;
+            height: 110px;
+            position: relative;
+            flex: 1;
+        }
+        
+        
+    }
+  
+ 
+.HeaderButton{
+    @media screen and (min-width: 1400px){ //larger
+        width:auto;
+        height: 100%;
+        position: relative;
+        display: inline-block; //displays everything in line, straight down
+        color: rgb(10, 3, 1);
+        top: 50%;                  //used in conjection with transform translateY to center in side a div
+        transform: translateY(-50%); //centers
+        padding-top: 40px;   //adds 40 pixels of padding to the top
+        padding-right:40px;  //adds 40 pixels of padding to right
+        font-size: 30px;    //sets the size of the font to 30 pixels
+        font-weight: bold;  //sets the weight of the font to bold
+    }
+    @media screen and (max-width: 1400px){ //smaller
+        width: auto;
+        height: auto;
+        position: relative;
+        display: block;
+        padding-right: 40;
+        color: rgb(10, 3, 1);
+        padding-top: 40px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;  //puts the text in the center of the element
+    }
+}
+.HeaderButtonWrapper{
+    position: relative;
+    display: block;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);  
+    width: 100%;
+    @media screen and (min-width: 1400px){ //larger
+        position: relative;
+        display: block;
+        text-align: right;
+        top: 50%;
+        transform: translateY(-50%);  
+        width: 100%;
+    }
+    @media screen and (max-width: 1400px){ //smaller
+        width: 0;
+        height: 100%;
+        min-height: 100vh;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        text-align: right;
+        padding-top: 120px;
+        transition: 0.1s ease; //sets the transition of this element to 0.1s to I think slow fast slow. but it doesnt matter cause its so fast lol
+        flex: 1;
+    }
+    
+}
+.HeaderButtonWrapperOpen{
+    position: relative;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);  
+    width: 100%;
+    @media screen and (min-width: 1600px){ //larger
+        position: relative;
+        display: block;
+        text-align: right;
+        top: 50%;
+        transform: translateY(-50%);  
+        width: 100%;
+}
+    @media screen and (max-width: 1600px){ //smaller
+        width: 80vw;
+        height: 100%;
+        min-height: 100vh;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(238, 238, 238, 0.966);
+        background-color: white;
+        text-align: right;
+        padding-top: 100px;
+        transition: 0.5s ease;
+    }
+    @media screen and (max-width: 350px){ //smaller
+        width: 80vw;
+        height: 100%;
+        min-height: 100vh;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(238, 238, 238, 0.966);
+        background-color: white;
+        text-align: right;
+        padding-top: 50px;
+        transition: 0.5s ease;
+    }
+}
+ 
+.mobileButton{
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 24px;
+    z-index: 2002;
+    flex: 1;
+    @media screen and (min-width: 1400px){
+        display: none;
+    }
+    @media screen and (max-width: 1400px) {
+        flex: 1;
+        
+        
+    }
+}
+ 
+.mobileButton:hover{ //when this element is hovered over do this 
+    cursor: pointer; //users mouse becomes a pointer instead of the default arrow
+}
+ 
+.hamLine{
+    height: 7px;
+    width: 48px;
+    position: relative;
+    display: block;
+    margin: 8px 0px;
+    background-color: $SecondaryColor;
+    border-radius: 5px;  //adds a roundness to the corners of the element
+}
+ 
+.headerWrapper{
+    width: auto;
+    height: 110px; 
+    position: relative;
+    display: block;
+}

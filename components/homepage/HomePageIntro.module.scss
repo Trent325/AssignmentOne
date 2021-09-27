@@ -1,0 +1,31 @@
+.ImageContainer{
+    position: relative;
+    display: block;
+    background-color: brown;
+    width: auto;
+    height: 800px;
+    background-image: url('../../public/HomeOne.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+
+}
+.ImageTextContainer{
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    display: block;
+    top: 40%;
+    transform: translateY(-40%);
+}
+.ImageContainerText{
+    color: white;
+    font-family: arialNovaBold;
+    font-size: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    display: block;
+}
