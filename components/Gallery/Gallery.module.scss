@@ -9,13 +9,16 @@
 .gallery {
     margin: 5px;
     width: 180px;
-    
+    border: 10px;
+    border-color: blue;
+    border-style: groove;
+    background-color: rgb(144, 187, 189);
     flex: 1;
     
   }
   
 .gallery:hover {
-    border: 1px solid #777;
+    border: 10px groove yellow;
   }
   
 .gallery img {
