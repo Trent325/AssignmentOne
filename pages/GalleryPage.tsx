@@ -6,14 +6,17 @@ import Header from "../components/header";
 import HomePageIntro from '../components/homepage';
 import Footer from "../components/footer";
 import Gallery from "../components/Gallery";
+import ImageTitle from "../components/Image Title block ";
 
 
 const GalleryPage: NextPage = () => { //creates the object
   return ( //returns the following 
     <div> 
       <Header/>
+      <ImageTitle/>
       <Gallery/>
       <Footer/>
+      
     </div>
   )
 }
