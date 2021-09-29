@@ -5,24 +5,24 @@ const Gallery: React.FC =() =>{
         <div>
             <div className={style.container}>
                 <div className={style.gallery}>
-                <a target="_blank" href="Image1.JPG">
-                    <img src="Image1.JPG" alt="Cinque Terre" width="600" height="400"></img>
+                <a target="_blank" href="Image13.JPG">
+                    <img src="Image13.JPG" alt="Cinque Terre" width="600" height="400"></img>
                 </a>
-                <div className={style.caption}>Double Rainbow</div>
+                <div className={style.caption}>Family Dinner 1967</div>
                 </div>
     
                 <div className={style.gallery}>
-                <a target="_blank" href="Image2.JPG">
-                    <img src="Image2.JPG" alt="Cinque Terre" width="600" height="400"></img>
+                <a target="_blank" href="Image14.JPG">
+                    <img src="Image14.JPG" alt="Cinque Terre" width="600" height="400"></img>
                 </a>
-                <div className={style.caption}>Trees and a Path</div>
+                <div className={style.caption}>Chicken Nuggy</div>
                 </div>
     
                 <div className={style.gallery}>
-                <a target="_blank" href="Image3.JPG">
-                    <img src="Image3.JPG" alt="Cinque Terre" width="600" height="400"></img>
+                <a target="_blank" href="Image15.JPG">
+                    <img src="Image15.JPG" alt="Cinque Terre" width="600" height="400"></img>
                 </a>
-                <div className={style.caption}>Sunset tree</div>
+                <div className={style.caption}>Exotic Sandwich</div>
                 </div>
                 
 
