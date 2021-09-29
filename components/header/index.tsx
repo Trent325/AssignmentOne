@@ -34,7 +34,7 @@ const Header: React.FC =() =>{ //created the header object
                 <div className={style.FlexBox}> 
                         <div className = {style.boxCol}>
                             <div className ={style.HeaderLogo} >
-                                <img src = "/Camera.jpg"></img>                          
+                                <img src = "/logo.png"></img>                          
                             </div>
                         </div>
                     <div className = {style.boxCol}>
