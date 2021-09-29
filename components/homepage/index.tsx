@@ -6,8 +6,8 @@ const HomePageIntro: React.FC =() =>{
         <div>
             <div className={style.ImageContainer}>
                 <div className={style.ImageTextContainer}>
-                    <div className={style.ImageContainerText}>
-                        Photography Website
+                    <div className={style.title1}>
+                            Food Hub
                     </div>
                 </div>
             </div> 

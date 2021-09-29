@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+$SecondaryColor: #321cc4; //Creates a variable to the secondary color of the wesbite in hexadecimal
+
 .ImageContainer{
     position: relative;
     display: block;
@@ -22,10 +25,19 @@
     transform: translateY(-40%);
 }
 .ImageContainerText{
-    color: white;
+    color: rgb(192, 53, 53);
     font-family: arialNovaBold;
-    font-size: 30px;
+    font-size: 300px;
     padding-bottom: 20px;
     position: relative;
     display: block;
 }
+.title1 {
+    padding: 0;
+    margin: 0;
+    font-size: 250px;
+    
+    font-family: 'Fjalla One', sans-serif;
+        -webkit-text-stroke: 4px rgb(255, 255, 255);
+      -webkit-text-fill-color: $SecondaryColor;
+  }

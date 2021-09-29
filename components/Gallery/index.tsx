@@ -92,7 +92,7 @@ const Gallery: React.FC =() =>{
                 <a target="_blank" href="Image6.JPG">
                     <img src="Image6.JPG" alt="Cinque Terre" width="600" height="400"></img>
                 </a>
-                <div className={style.caption}>hey bales</div>
+                <div className={style.caption}>food truck food</div>
                 </div>
             </div>
     
