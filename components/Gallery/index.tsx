@@ -40,7 +40,7 @@ const Gallery: React.FC =() =>{
                 <a target="_blank" href="Image5.JPG">
                     <img src="Image5.JPG" alt="Cinque Terre" width="600" height="400"></img>
                 </a>
-                <div className={style.caption}>now a butterfly</div>
+                <div className={style.caption}>Loaded Burger</div>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@ const Gallery: React.FC =() =>{
                 <a target="_blank" href="Image7.JPG">
                     <img src="Image7.JPG" alt="Cinque Terre" width="600" height="400"></img>
                 </a>
-                <div className={style.caption}>a sunflower</div>
+                <div className={style.caption}>Wings n' Ranch</div>
                 </div>
     
                 <div className={style.gallery}>
